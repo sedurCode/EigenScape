@@ -122,7 +122,7 @@ def build_audio_featureset(feature_extractor, dataset_directory='', **kwargs):
 
     indices = {}
 
-    progbar = pb.ProgressBar(max_value=len(info))
+    progbar = pb.ProgressBar(len(info))
     progbar.start()
 
     for n, (filepath, label) in enumerate(info.items()):
