@@ -25,7 +25,7 @@ def split_audio_set(dataset_dir, seg_length):
 
     file_list = glob.glob(dataset_dir + '/*')
 
-    progbar = pb.ProgressBar(max_value=len(file_list))
+    progbar = pb.ProgressBar(len(file_list))
     progbar.start()
 
     for n, path in enumerate(file_list):
