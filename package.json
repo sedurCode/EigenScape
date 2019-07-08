@@ -1,0 +1,29 @@
+{
+  "name": "eigenscape",
+  "version": "1.0.0",
+  "description": "ambisonic soundscape streaming ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedurCode/EigenScape.git"
+  },
+  "keywords": [
+    "ambison",
+    "audio",
+    "api"
+  ],
+  "author": "S Durbridge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedurCode/EigenScape/issues"
+  },
+  "homepage": "https://github.com/sedurCode/EigenScape#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "omnitone": "^1.3.0",
+    "p5": "^0.9.0"
+  }
+}
