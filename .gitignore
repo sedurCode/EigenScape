@@ -1,2 +1,5 @@
 
-*.wav
+#ignore files in folder
+audio/*
+fold_info/*
+selection/*
