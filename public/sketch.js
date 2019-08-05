@@ -1,18 +1,17 @@
 var foaRenderer;
-var audioSources = {
-  'Beach': 'Beach.1.1.wav',
-  'Park': 'Park.3.3.wav'
-};
 var buttonPlayback, selectSource, buttonBypass;
 var rotationMatrix3 = new Float32Array(9);
 var onLoad = function () {
   var audioContext = new AudioContext();
-  var audioElement = document.createElement('audio');
+  // var audioElement = document.createElement('audio');
+  var audioElement = document.getElementById('audioPlayer');
   var audioElementSource =
       audioContext.createMediaElementSource(audioElement);
   audioElement.loop = true;
   audioElement.crossOrigin = 'anonymous';
-  audioElement.src = audioSources['Beach'];
+  // audioElement.src = audioSources['Beach'];
+  audioElement.src ="http://localhost:3000/audio";
+  audioElement.type="audio/wav"
   eRangeGain.oninput = onGainSliderChange;
   eRangeAzimuth.oninput = onDirectionChange;
   eRangeElevation.oninput = onDirectionChange;
@@ -23,18 +22,11 @@ var onLoad = function () {
     channelMap: [0, 1, 2, 3]
   });
 
-  selectSource = document.getElementById('eSelectSource');
-  buttonPlayback = document.getElementById('eButtonPlayback');
+  // selectSource = document.getElementById('eSelectSource');
+  // buttonPlayback = document.getElementById('eButtonPlayback');
   buttonBypass = document.getElementById('eButtonBypass');
 
-  selectSource.onchange = function (event) {
-    audioElement.src = audioSources[event.target.value];
-    audioElement.load();
-    if (buttonPlayback.textContent === 'Pause')
-      audioElement.play();
-  };
-
-  buttonPlayback.onclick = function (event) {
+  audioElement.onplay = function (event) {
     if (event.target.textContent === 'Play') {
       event.target.textContent = 'Pause';
       audioContext.resume();
@@ -45,6 +37,27 @@ var onLoad = function () {
       audioContext.suspend();
     }
   };
+
+
+  //
+  // selectSource.onchange = function (event) {
+  //   audioElement.src = audioSources[event.target.value];
+  //   audioElement.load();
+  //   if (buttonPlayback.textContent === 'Pause')
+  //     audioElement.play();
+  // };
+  //
+  // buttonPlayback.onclick = function (event) {
+  //   if (event.target.textContent === 'Play') {
+  //     event.target.textContent = 'Pause';
+  //     audioContext.resume();
+  //     audioElement.play();
+  //   } else {
+  //     event.target.textContent = 'Play';
+  //     audioElement.pause();
+  //     audioContext.suspend();
+  //   }
+  // };
 
   buttonBypass.onclick = function (event) {
     if (event.target.textContent === 'Ambisonic') {
@@ -57,8 +70,8 @@ var onLoad = function () {
   };
 
   foaRenderer.initialize().then(function () {
-    selectSource.disabled = false;
-    buttonPlayback.disabled = false;
+    // selectSource.disabled = false;
+    // buttonPlayback.disabled = false;
     buttonBypass.disabled = false;
     audioElementSource.connect(foaRenderer.input);
     foaRenderer.output.connect(audioContext.destination);
