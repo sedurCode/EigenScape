@@ -58,7 +58,7 @@ import shutil
 import random
 
 dataPath = '/Volumes/Data/EigenScape/audio/'
-dict_name = '/Users/simon/gits/EigenScape/indices_eigenscape_5_8_19.csv'
+dict_name = '/Users/simon/gits/EigenScape/indices_eigenscape_7_8_19.csv'
 dir_path = os.getcwd()
 numDirs = glob.glob(os.getcwd() + '/audio/*')
 # progbar = pb.ProgressBar(len(numDirs))
