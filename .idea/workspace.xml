@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="58a2110d-20b4-4fc3-8dfa-f1e46c5175e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcousticIndexAnalysis.mlx" beforeDir="false" afterPath="$PROJECT_DIR$/AcousticIndexAnalysis.mlx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Acoustic_Indices" beforeDir="false" afterPath="$PROJECT_DIR$/Acoustic_Indices" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acoustic_Indices/acoustic_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acoustic_Indices/acoustic_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acoustic_Indices/compute_indice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acoustic_Indices/compute_indice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acoustic_Indices/dict.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acoustic_Indices/main_test_indices.py" beforeDir="false" afterPath="$PROJECT_DIR$/Acoustic_Indices/main_test_indices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Acoustic_Indices/yaml/config_014_butter.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Acoustic_Indices/yaml/config_014_butter.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fold_info/fold1_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fold_info/fold1_test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,12 +31,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Acoustic_Indices/yaml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Acoustic_Indices/yaml" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Acoustic_Indices/yaml" />
     </key>
   </component>
   <component name="RunDashboard">

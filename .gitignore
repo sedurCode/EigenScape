@@ -3,3 +3,5 @@
 audio/*
 fold_info/*
 selection/*
+Acoustic_Indices/audio_files/*
+*.wav
